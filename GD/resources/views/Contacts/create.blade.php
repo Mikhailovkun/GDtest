@@ -22,7 +22,7 @@
             </ul>
         </div>
     @endif
-    <form action="" method="POST" >
+    <form action="/contact/submit" method="POST" >
         @method('PUT')
         @csrf
 

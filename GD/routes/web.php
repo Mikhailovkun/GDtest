@@ -13,9 +13,10 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', [ContactController::class, 'index']);
+//Route::get('/', [ContactController::class, 'index']);
 
-Route::get('/create', [ContactController::class, 'create']);
+Route::get('/', [ContactController::class, 'create']);
 
+Route::post('/', [ContactController::class, 'store']);
 
 

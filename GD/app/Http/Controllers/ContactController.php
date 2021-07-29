@@ -2,105 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $contacts = Contact::latest()->paginate(5);
-
-        return view('contacts.index', compact('contacts'))
-            ->with('i', (request()->input('page', 1) - 1) * 25);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        return view('contacts.create');
+
+        return view('/contact');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required',
-        ]);
+    public function store(Request $request) {
+        $contact = new Contact;
 
-        Contact::create($request->all());
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->subject = $request->subject;
+        $contact->mobile_number = $request->mobile_number;
+        $contact->message = $request->message;
 
-        return redirect()->route('contacts.index')
-            ->with('success', 'Contact added.');
-    }
+        $contact->save();
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Contact $contact)
-    {
-        return view('contacts.show', compact('contact'));
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Contact $contact)
-    {
-        return view('contacts.edit', compact('contact'));
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Contact $contact)
-    {
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required',
-        ]);
-        $contact->update($request->all());
-
-        return redirect()->route('contacts.index')
-            ->with('success', 'Contact updated');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Contact $contact)
-    {
-        $contact->delete();
-
-        return redirect()->route('contacts.index')
-            ->with('success', 'Contact deleted');
+        return response()->json(['success'=>'Contact form submitted successfully']);
     }
 }

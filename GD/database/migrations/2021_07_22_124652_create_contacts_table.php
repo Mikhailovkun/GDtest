@@ -18,7 +18,9 @@ class CreateContactsTable extends Migration
             $table->timestamps();
             $table->string('name',255);
             $table->string('email',255);//проверка емейла
+            $table->string( 'mobile_number',11);
             $table->string( 'message')->nullable();
+
         });
     }
 

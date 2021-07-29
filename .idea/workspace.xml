@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a7f3c09-4530-4419-b4f6-9f67496f14c6" name="Default Changelist" comment="" />
+    <list default="true" id="3a7f3c09-4530-4419-b4f6-9f67496f14c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GD/resources/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GD/resources/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GD/resources/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GD/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/GD/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GD/app/Models/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/GD/app/Models/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GD/database/migrations/2021_07_22_124652_create_contacts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/GD/database/migrations/2021_07_22_124652_create_contacts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GD/resources/views/Contacts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/GD/resources/views/Contacts/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GD/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/GD/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/GD/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,6 +135,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1vfSsMs06udyWuHISVyEW8ldaNu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -131,8 +145,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Software/OpenServer/modules/php/PHP_7.4/php.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="consents" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Omen\PhpstormProjects\GD\GD\routes" />
+      <recent name="C:\Users\Omen\PhpstormProjects\GD\GD\routes\web" />
+      <recent name="C:\Users\Omen\PhpstormProjects\GD\GD\routes\api" />
+      <recent name="C:\Users\Omen\PhpstormProjects\GD\GD\resources\css" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -143,7 +166,11 @@
       <option name="presentableId" value="Default" />
       <updated>1626951855861</updated>
       <workItem from="1626951856930" duration="7848000" />
-      <workItem from="1626960842183" duration="4807000" />
+      <workItem from="1626960842183" duration="5260000" />
+      <workItem from="1627292658655" duration="564000" />
+      <workItem from="1627374699465" duration="11061000" />
+      <workItem from="1627391281240" duration="3743000" />
+      <workItem from="1627456013945" duration="2679000" />
     </task>
     <servers />
   </component>
@@ -151,18 +178,34 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="177" y="224" key="#Inspections" timestamp="1627385281235">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="177" y="224" key="#Inspections/62.0.1858.1080@62.0.1858.1080" timestamp="1627385281235" />
     <state x="507" y="240" width="967" height="600" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1626962825119">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="507" y="240" width="967" height="600" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1626962825119" />
-    <state x="761" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626961766664">
+    <state x="761" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1627393480270">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="761" y="349" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1626961766664" />
+    <state x="761" y="349" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1627393480270" />
     <state x="721" y="289" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626959360924">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="289" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080/1920.0.1920.1050@62.0.1858.1080" timestamp="1626959360924" />
+    <state x="302" y="403" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1627385084123">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="302" y="403" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.0.1858.1080@62.0.1858.1080" timestamp="1627385084123" />
+    <state x="869" y="442" key="Github.ShareDialog" timestamp="1626965911698">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="869" y="442" key="Github.ShareDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1626965911698" />
+    <state x="755" y="247" key="Github.UntrackedFilesDialog" timestamp="1626965936876">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="755" y="247" key="Github.UntrackedFilesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1626965936876" />
     <state x="494" y="186" key="SettingsEditor" timestamp="1626964056203">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -175,9 +218,9 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="647" y="250" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1626961252295" />
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1626964107732">
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1627394736987">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1626964107732" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1627394736987" />
   </component>
 </project>
